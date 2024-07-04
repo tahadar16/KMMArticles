@@ -1,0 +1,16 @@
+CREATE TABLE Article (
+ title TEXT NOT NULL,
+ description TEXT NOT NULL ,
+ date TEXT NOT NULL,
+ imageUrl TEXT NOT NULL
+);
+
+insertArticle:
+INSERT INTO Article (title, description, date, imageUrl)
+VALUES (?, ?, ?, ?);
+
+getAllArticles:
+SELECT * FROM Article;
+
+removeAllArticles:
+DELETE FROM Article;
